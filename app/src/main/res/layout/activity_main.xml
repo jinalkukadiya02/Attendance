@@ -71,16 +71,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:checked="true"
-                android:text="Absent"
-                android:textSize="20dp" />
+                android:text="@string/absent"
+                android:textSize="20sp" />
 
             <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/present"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="20dp"
-                android:text="present"
-                android:textSize="20dp" />
+                android:layout_marginStart="20dp"
+                android:text="@string/present"
+                android:textSize="20sp" />
         </RadioGroup>
 
         <TextView
@@ -103,13 +103,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                android:textSize="15dp" />
+                android:textSize="15sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnPickDate"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
                 android:layout_weight="1"
                 android:background="@drawable/ic_baseline_date_range_24" />
         </LinearLayout>
@@ -141,7 +140,6 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
                 android:layout_weight="1"
                 android:background="@drawable/ic_baseline_access_time_24" />
         </LinearLayout>
@@ -150,7 +148,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Reason:"
+            android:text="@string/reason"
             android:textSize="22sp"
             android:textStyle="bold" />
 
@@ -168,7 +166,7 @@
                 android:id="@+id/edtReason"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter your Reason"
+                android:hint="@string/enter_your_reason"
                 android:inputType="textEmailAddress" />
 
             <com.google.android.material.button.MaterialButton

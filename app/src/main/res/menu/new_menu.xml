@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/attendance"
+        android:title="Attendance "
+        android:orderInCategory="101"
+        android:icon="@drawable/ic_baseline_co_present_24"/>
+    <item
+        android:id="@+id/Logout"
+        android:title="Logout "
+        android:orderInCategory="104"
+        android:icon="@drawable/ic_baseline_logout_24"/>
+    <item android:id="@+id/Contact"
+        android:title="Contact"
+        android:icon="@drawable/ic_baseline_contacts_24"
+        android:orderInCategory="103"
+        />
+    <item android:id="@+id/Display"
+        android:orderInCategory="102"
+        android:icon="@drawable/ic_baseline_display_settings_24"
+        android:title="Display Attendance"/>
+</menu>

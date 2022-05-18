@@ -2,8 +2,12 @@ package com.jinal.attendance;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,14 +19,18 @@ import android.widget.TimePicker;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 import java.text.DateFormat;
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
     TextView tvDate,tvTime;
-    Button btnPickDate,btnTime;
+    Button btnPickDate,btnTime,btnsubmit;
     RadioButton absent, present;
     RadioGroup rg;
+
 
 
     @Override
@@ -31,8 +39,10 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         setContentView(R.layout.activity_main);
         tvDate = findViewById(R.id.Date);
         tvTime=findViewById(R.id.tvTime);
+        btnsubmit=findViewById(R.id.btn);
         btnTime=findViewById(R.id.btnPicktime);
         btnPickDate = findViewById(R.id.btnPickDate);
+
         rg = findViewById(R.id.gender);
         rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
